@@ -8,3 +8,5 @@ To function properly, the program requires a settings.json file in the execution
 Database: Indicates the type of database (mysql, firebird, etc...)
 connString1: Indicates the connection string of the template database
 connString2: Indicates the connection string of the comparison database
+
+![image](https://github.com/Oras98/DBSyncro/assets/80165682/ebe086c1-6355-4dec-8c22-cf09f246bf7f)
