@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DBSyncro
 {
-    public interface IDatabaseConnection
+    public interface IDatabaseConnection: IDisposable
     {
         public void Open();
         public void Close();

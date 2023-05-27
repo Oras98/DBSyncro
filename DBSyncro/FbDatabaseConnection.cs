@@ -11,7 +11,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace DBSyncro
 {
-    public class FbDatabaseConnection : IDatabaseConnection, IDisposable
+    public class FbDatabaseConnection : IDatabaseConnection
     {
         private FbConnection connection;
 

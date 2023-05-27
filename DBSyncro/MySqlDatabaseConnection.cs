@@ -10,7 +10,7 @@ using FirebirdSql.Data.FirebirdClient;
 
 namespace DBSyncro
 {
-    public class MySqlDatabaseConnection : IDatabaseConnection, IDisposable
+    public class MySqlDatabaseConnection : IDatabaseConnection
     {
         private MySqlConnection connection;
 

@@ -25,7 +25,7 @@ try
     if (cnn1 is null || cnn2 is null)
         throw new Exception($"Database type {db_type} is not impemented yet!");
 
-    var fb_db_syncro = new ComparerController(cnn1, cnn2);
+    using var fb_db_syncro = new ComparerController(cnn1, cnn2);
     var res = fb_db_syncro.GetDifferences(true);
 
     Console.ForegroundColor = ConsoleColor.Green;

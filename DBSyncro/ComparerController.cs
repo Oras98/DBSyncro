@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace DBSyncro
 {
-    public class ComparerController
+    public class ComparerController : IDisposable
     {
         IDatabaseConnection conn1, conn2;
         public ComparerController(IDatabaseConnection connString1, IDatabaseConnection connString2)
@@ -129,6 +129,12 @@ namespace DBSyncro
 
             // Save the formatted JSON to a text file
             File.WriteAllText("differences.json", formattedJson);
+        }
+
+        public void Dispose()
+        {
+            conn1.Dispose();
+            conn2.Dispose();
         }
     }
 }
