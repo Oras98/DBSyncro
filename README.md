@@ -1,5 +1,5 @@
 # DBSyncro
-Given two databases, the program writes the differences between the first and the second. 
+Given two databases, the program writes the structural differences between the first and the second. 
 The first database is the template database, and any tables/columns present in the template but not in the second database will be reported, but not vice versa. 
 The differences are inserted into a .json file in the program's execution folder.
 
